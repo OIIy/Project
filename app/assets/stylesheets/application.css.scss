@@ -22,7 +22,7 @@
       color:white;
   }
   
-  .navbar, .home-callout {
+  .navbar, .home-callout { //applying gradient to navbar and body
     //Gradient provided by @_ighosh at uiGradients.com
     background: #141E30;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
@@ -32,19 +32,17 @@
   .navbar {
     border: none;
 }
-  .home-callout {
+  .home-callout { // main callout
   color: white;
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
-  .navbar-default .navbar-brand { //navbar font color
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-nav > li > a,{ //navbar font color
     color:white;
-}
-  .navbar-default .navbar-nav > li > a {
-    color:white;
-}
-  .navbar-default .navbar-nav > li > a:hover {
-    color:white;  
+    &:hover { // using scss to factor hover and default together
+      color:white;
+    }
 }
   
