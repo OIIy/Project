@@ -19,9 +19,16 @@
   @import 'font-awesome-sprockets';
   @import 'font-awesome';
   
+  homecallout {
+    color:white;
+  }
+  
+  .navbar-default .navbar-brand {
+    font-weight: 600;
+  }
+  
   h1, h2, h3 {
-      font-family: 'Open Sans', sans-serif;
-      color:white;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .navbar, .home-callout { //applying gradient to navbar and body
